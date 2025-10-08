@@ -1,0 +1,72 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.html, body {
+width: 100%;
+height: 100%;
+background-color: lightgray;   
+
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+}
+.header {
+    width: 100%;
+    height: 10%;
+    max-width: 200%;
+    min-width: 30%;
+    background-color: white;
+    position: fixed;
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.fakeheader {
+    width: 100%;
+    height: 10%;
+    background-color: rgb(213, 230, 173);
+
+}
+.page1 {
+    width: 100%;
+    height: 90%;
+    background-color: lightgreen;
+}
+
+.item {
+        
+    margin: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgba(27, 85, 124, 0.815);
+    padding: 1px;
+}
+
+.item:hover {
+    
+    color: rgb(235, 139, 217);
+    cursor: pointer;
+}
+.header button {
+    background-color: rgb(7, 7, 199);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+   
+.Page1 {
+    width: 100%;
+    height: 5vh;
+ background-color: rgb(7, 7, 199);
+}
