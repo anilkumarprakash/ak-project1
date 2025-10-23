@@ -1,72 +1,102 @@
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
-}
 
-.html, body {
-width: 100%;
-height: 100%;
-background-color: lightgray;   
+/* Add code for container class below */
+.container {
+    /* Add rules here */
+    display: grid; 
 
-}
+    height: 200px; 
 
-.main {
-    width: 100%;
-    height: 100%;
-    background-color: pink;
-}
-.header {
-    width: 100%;
-    height: 10%;
-    max-width: 200%;
-    min-width: 30%;
-    background-color: white;
-    position: fixed;
-    display: flex;  
-    align-items: center;
-    justify-content: space-around;
-    
-    
-}
-.fakeheader {
-    width: 100%;
-    height: 10%;
-    background-color: rgb(213, 230, 173);
+    grid-template-areas: "head head" 
 
-}
-.page1 {
-    width: 100%;
-    height: 90%;
-    background-color: lightgreen;
-}
+                         "nav  main" 
 
-.item {
-        
-    margin: 1px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: rgba(27, 85, 124, 0.815);
-    padding: 1px;
-}
+                         "footer  footer"; 
 
-.item:hover {
-    
-    color: rgb(235, 139, 217);
-    cursor: pointer;
-}
-.header button {
-    background-color: rgb(7, 7, 199);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    
-}
+    grid-template-rows: 30px 1fr 30px; 
+
+    grid-template-columns: 150px 1fr; 
+
+  } 
 
    
-.Page1 {
-    width: 100%;
-    height: 5vh;
- background-color: rgb(7, 7, 199);
+
+  header { 
+
+    grid-area: head; 
+
+    background-color: lightsalmon; 
+
+  } 
+
+   
+
+  .nav-bar { 
+
+    grid-area: nav; 
+
+    background-color: lightblue; 
+
+  } 
+
+   
+
+  main { 
+
+    grid-area: main; 
+
+    background-color: lightyellow; 
+
+  } 
+
+   
+
+   footer { 
+
+    grid-area: footer; 
+
+    background-color: firebrick;
+    
 }
+/* Add media rules for container class below */
+@media (min-width: 440px) {
+    .container {
+    /* Add rules here */
+    }
+}
+
+
+/* Properties for other selectors */
+.header {
+    grid-area: header;
+    padding: 10px;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+}
+  
+.main {
+    grid-area: main;
+    padding: 25px;
+}
+  
+.left {
+    grid-area: left;
+    background-color: peachpuff;
+  }
+  
+.right {
+    grid-area: right;
+  }
+  
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+  }
+  
+.sidebar {
+    padding: 25px;
+    background-color:darkcyan;
+  }
